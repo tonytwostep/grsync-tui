@@ -1,6 +1,6 @@
 # grsync-tui
 
-A fast terminal user-interface for transferring photos from **Ricoh GR** cameras to your computer via WiFi, USB, and 
+A fast terminal user-interface for transferring photos from **Ricoh GR** cameras to your computer via WiFi, USB, and
 eventually Bluetooth.
 
 ![Demo](media/demo.gif)
@@ -50,7 +50,7 @@ Use `? / h` to view the applications help menu.
 Here is the list as a Markdown table:
 
 | Key            | Action                                |
-|----------------|---------------------------------------|
+| -------------- | ------------------------------------- |
 | Up / k         | Move up one item                      |
 | Down / j       | Move down one item                    |
 | Shift+Up / K   | Expand selection up                   |
@@ -70,8 +70,4 @@ Here is the list as a Markdown table:
 - Go 1.24.3
 - For WiFi: The device must be connected to the camera's network
 - For USB: Camera must be mounted
-- For Bluetooth: The device must be paired with the camera
-
-## License
-
-MIT
+- For Bluetooth: The device must be paired with the camera (coming soon)
