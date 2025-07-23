@@ -1,0 +1,38 @@
+resources:
+  - name: local_repo
+    type: git
+    source:
+      uri: git@git.boj4ck.net:tonytwostep/grsync-tui.git
+      branch: master
+      private_key: ((git_ssh_key))
+    icon: git
+
+  - name: gh_repo
+    type: git
+    source:
+      uri: git@github.com:TonyTwoStep/grsync-tui.git
+      branch: master
+      private_key: ((git_ssh_key))
+    icon: github
+
+
+jobs:
+  - name: sync-pipeline
+    plan:
+      - get: local_repo
+        trigger: true
+      - set_pipeline: self
+        file: local_repo/ci/pipeline.yaml
+        vars:
+          git_ssh_key: ((git_ssh_key))
+    serial: true
+
+  - name: mirror-repo-to-gh
+    plan:
+      - get: local_repo
+        passed: [sync-pipeline]
+        trigger: true
+      - put: gh_repo
+        params:
+          repository: local_repo
+    serial: true
