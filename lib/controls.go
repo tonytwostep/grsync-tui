@@ -2,9 +2,9 @@ package lib
 
 import (
 	"fmt"
-	"git.boj4ck.com/tonytwostep/grsync-tui/assets"
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
+	"github.com/tonytwostep/grsync-tui/assets"
 )
 
 // SetupControls sets up the global keybindings for the app.

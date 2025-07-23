@@ -1,4 +1,4 @@
-module git.boj4ck.com/tonytwostep/grsync-tui
+module github.com/tonytwostep/grsync-tui
 
 go 1.24.3
 

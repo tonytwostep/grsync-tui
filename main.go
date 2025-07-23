@@ -3,11 +3,11 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"git.boj4ck.com/tonytwostep/grsync-tui/assets"
-	"git.boj4ck.com/tonytwostep/grsync-tui/lib"
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 	"github.com/rwcarlsen/goexif/exif"
+	"github.com/tonytwostep/grsync-tui/assets"
+	"github.com/tonytwostep/grsync-tui/lib"
 	"io"
 	"net/http"
 	"syscall"

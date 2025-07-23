@@ -18,13 +18,13 @@ eventually Bluetooth.
 Install with Go:
 
 ```bash
-go install git.boj4ck.net/tonytwostep/grsync-tui@latest
+go install github.com/tonytwostep/grsync-tui@latest
 ```
 
 Or build manually:
 
 ```bash
-git clone git@git.boj4ck.net:tonytwostep/grsync-tui.git
+git clone https://github.com/TonyTwoStep/grsync-tui.git
 cd grsync-tui
 go build -o grsync-tui
 ./grsync-tui
