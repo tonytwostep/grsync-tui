@@ -1,14 +1,13 @@
 # grsync-tui
 
-A fast terminal user-interface for transferring photos from **Ricoh GR** cameras to your computer via WiFi, USB, and
-eventually Bluetooth.
+A fast terminal user-interface for transferring photos from **Ricoh GR** cameras to your computer via WiFi or USB.
 
 ![Demo](media/demo.gif)
 
 ## Features
 
 - Browse and select photos from your camera to download
-- Supports both WiFi and USB connections with Bluetooth to follow
+- Supports both WiFi and USB connections
 - Preview photos in terminal
 - Cross-platform (macOS, Linux, Windows, Termux, etc.)
 - Won't download photos that already exist in the download directory
@@ -36,7 +35,7 @@ On first run, a config file is automatically created at `~/.config/grsync-tui.js
 
 You can edit this file to set:
 
-- `connection_method`: `"usb"`, `"wifi"`, or `"bluetooth"`
+- `connection_method`: `"usb"` or `"wifi"`
 - `download_dir`: Directory where downloaded photos are saved
 - `usb.camera_dir`: Path to the mounted camera directory (for USB mode)
 
@@ -70,4 +69,3 @@ Here is the list as a Markdown table:
 - Go 1.24.3
 - For WiFi: The device must be connected to the camera's network
 - For USB: Camera must be mounted
-- For Bluetooth: The device must be paired with the camera (coming soon)

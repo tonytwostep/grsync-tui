@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 )
 
-// Const for mocking bluetooth and wifi responses in an effort to ease development
+// Const for mocking wifi responses in an effort to ease development
 const mock = false
 
 var configFileRelativePath = filepath.Join(".config", "grsync-tui.json")
@@ -44,9 +44,8 @@ func defaultConfig() Config {
 type ConnectionMethod string
 
 const (
-	ConnectionMethodUSB       ConnectionMethod = "usb"
-	ConnectionMethodWiFi      ConnectionMethod = "wifi"
-	ConnectionMethodBluetooth ConnectionMethod = "bluetooth" // todo not implemented
+	ConnectionMethodUSB  ConnectionMethod = "usb"
+	ConnectionMethodWiFi ConnectionMethod = "wifi"
 )
 
 func configFilePath() string {
