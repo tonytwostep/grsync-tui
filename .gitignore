@@ -1,0 +1,7 @@
+download/
+camera/
+grsync-tui
+mock/
+.DS_Store
+.idea/
+todo.md
