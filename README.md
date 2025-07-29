@@ -23,7 +23,7 @@ go install github.com/tonytwostep/grsync-tui@latest
 Or build manually:
 
 ```bash
-git clone https://github.com/TonyTwoStep/grsync-tui.git
+git clone https://github.com/tonytwostep/grsync-tui.git
 cd grsync-tui
 go build -o grsync-tui
 ./grsync-tui

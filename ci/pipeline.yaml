@@ -10,7 +10,7 @@ resources:
   - name: gh_repo
     type: git
     source:
-      uri: git@github.com:TonyTwoStep/grsync-tui.git
+      uri: git@github.com:tonytwostep/grsync-tui.git
       branch: main
       private_key: ((git_ssh_key))
     icon: github
